@@ -26,21 +26,16 @@
   
   <section>
 	<Anchor id="content" />
+	
   <div
-	class="flex flex-col items-center justify-center bg-center bg-no-repeat bg-cover page lg:bg-fixed bg-neutral-600 bg-blend-soft-light dark:bg-blend-soft-light dark:bg-neutral-700"
+	class="flex flex-col items-center justify-center bg-center bg-no-repeat bg-cover page lg:bg-fixed bg-slate-900 bg-blend-soft-dark dark:bg-blend-soft-light dark:bg-slate-900"
 	id="bg"
   >
-
-
 		<div class="page-wrapper">
-
 			<h1 class="title">
 			Choose a race
 			  </h1>
 			  
-			  <div id="mcontainer">
-				<div id="monitor">
-				  <div id="monitorscreen">
 
 					<select
 					bind:value={selectedOption}
@@ -67,22 +62,18 @@
 					</div>	
 					{/if}
 					{#if loading === true}
-					<div class="waviy">
-					  <span style="--i:1">.</span>
-					  <span style="--i:2">.</span>
-					  <span style="--i:3">.</span>
-					  <span style="--i:4">.</span>
-					  <span style="--i:5">.</span>
-					  <span style="--i:6">.</span>
-					  <span style="--i:7">.</span>
-					 </div>
+					<div class="cube-wrap">
+						<div class="cube">
+						  <div class="face"><span class="dots">1</span></div>
+						  <div class="face"><span class="dots">2</span></div>
+						  <div class="face"><span class="dots">3</span></div>
+						  <div class="face"><span class="dots">4</span></div>
+						  <div class="face"><span class="dots">5</span></div>
+						  <div class="face"><span class="dots">6</span></div>
+						</div>
+					  </div>
 				  
 					{/if}
-
-
-				  </div>
-				</div>
-			  </div>
 
 
 		
@@ -296,7 +287,7 @@
 
 .waviy {
   position: relative;
-  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  -webkit-box-reflect: below  linear-gradient(transparent, rgba(0,0,0,.2));
   font-size: calc(1.5rem + 3vw);
 }
 .waviy span {
@@ -339,8 +330,130 @@
 }
  
 
+/**============================dice css ============================================*/
 
 
+:root {
+  --dark-300: #555;
+  --dark-200: #333;
+  --dark-100: #111;
+  --cube-red: #0046c8;
+  --cube-red-2: #0046c8;
+  --cube-red-3: #0046c8;
+  --cube-red-4: #0046c8;
+  --cube-red-5: #0046c8;
+  --cube-red-6: #0046c8;
+  --dot-color: #fffdfd;
+  --darken: rgba(0, 0, 0, 0.4);
+}
+body {
+  background: var(--dark-200);
+  background-image: radial-gradient(var(--dark-300), var(--dark-100));
+  position: relative;
+  min-height: 100vh;
+}
+.cube-wrap {
+  perspective: 1000;
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  perspective: 1000px;
+}
+.cube {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  -webkit-animation: spin 7s linear infinite;
+          animation: spin 7s linear infinite;
+}
+.face {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--cube-red);
+  background-image: radial-gradient(transparent, var(--darken));
+  border: 1px solid var(--cube-red-4);
+  -webkit-backface-visibility: visible;
+          backface-visibility: visible;
+}
+.dots {
+  display: inline-block;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  background-color: var(--dot-color);
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+.face {
+  background-color: #0046c8;
+  opacity: 1;
+}
+.face:nth-child(1) {
+  transform: rotateZ(0deg) rotateY(0deg) translateZ(100px);
+}
+.face:nth-child(1) .dots {
+  box-shadow: 120px 0 0 0 var(--dot-color), 0 -120px 0 0 var(--dot-color), 120px -120px 0 0 var(--dot-color), 1px 1px 3px 1px var(--darken), 121px 1px 3px 1px var(--darken), 1px -121px 3px 1px var(--darken), 121px -121px 3px 1px var(--darken);
+}
+.face:nth-child(2) {
+  background-color: var(--cube-red-2);
+  transform: rotateZ(0deg) rotateY(0deg) translateZ(-100px);
+}
+.face:nth-child(2) .dots {
+  box-shadow: 120px -120px 0 0 var(--dot-color), 60px -60px 0 0 var(--dot-color), 1px 1px 3px 1px var(--darken), 121px -121px 3px 1px var(--darken), 61px -61px 3px 1px var(--darken);
+}
+.face:nth-child(3) {
+  background-color: var(--cube-red-3);
+  transform: rotateZ(0deg) rotateY(90deg) translateZ(-100px);
+}
+.face:nth-child(3) .dots {
+  box-shadow: 120px -120px 0 0 var(--dot-color), 1px 1px 3px 1px var(--darken), 121px -121px 3px 1px var(--darken);
+}
+.face:nth-child(4) {
+  background-color: var(--cube-red-4);
+  transform: rotateZ(90deg) rotateY(90deg) translateZ(-100px);
+}
+.face:nth-child(4) .dots {
+  left: 80px;
+  bottom: 80px;
+  box-shadow: 1px 1px 3px 1px var(--darken);
+}
+.face:nth-child(5) {
+  background-color: var(--cube-red-5);
+  transform: rotateZ(0deg) rotateY(-90deg) translateZ(-100px);
+}
+.face:nth-child(5) .dots {
+  box-shadow: 120px 0 0 0 var(--dot-color), 0 -120px 0 0 var(--dot-color), 120px -120px 0 0 var(--dot-color), 60px -60px 0 0 var(--dot-color), 121px 1px 3px 1px var(--darken), 1px -121px 3px 1px var(--darken), 121px -121px 3px 1px var(--darken), 61px -61px 3px 1px var(--darken), 1px 1px 3px 1px var(--darken);
+}
+.face:nth-child(6) {
+  background-color: var(--cube-red-6);
+  transform: rotateZ(90deg) rotateY(90deg) translateZ(100px);
+}
+.face:nth-child(6) .dots {
+  box-shadow: 60px 0 0 0 var(--dot-color), 120px 0 0 0 var(--dot-color), 0 -120px 0 0 var(--dot-color), 60px -120px 0 0 var(--dot-color), 120px -120px 0 0 var(--dot-color), 61px 1px 3px 1px var(--darken), 121px 1px 3px 1px var(--darken), 1px -121px 3px 1px var(--darken), 61px -121px 3px 1px var(--darken), 121px -121px 3px 1px var(--darken);
+}
+@-webkit-keyframes spin {
+  0% {
+    transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateY(1800deg) rotateX(720deg) rotateZ(0deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateY(1800deg) rotateX(720deg) rotateZ(0deg);
+  }
+}
 
 
   </style>
