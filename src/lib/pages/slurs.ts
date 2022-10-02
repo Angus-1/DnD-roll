@@ -7,7 +7,7 @@ export const SLURS = [
         "Caw-Caws",
         "Crow",
         "Hollowbones",
-        "Parrot (in tropical/port cities)",
+        "Parrot ",
         "Pigeon",
         "Raven",
         "Vulture"
@@ -54,7 +54,7 @@ export const SLURS = [
             "Iguana Wannabe",
             "Lizard",
             "Lizard Brain",
-            "Lizard Wizard (for magical dragonborn)",
+            "Lizard Wizard ",
             "Lizardfolk",
             "Man-Eater",
             "Newt",
@@ -111,7 +111,7 @@ export const SLURS = [
             "Keg Belly",
             "Knoties",
             "Lumberfoot",
-            "Maggots (according to legend!)",
+            "Maggots ",
             "Mountain Farie",
             "Oremonger",
             "Pubic Face",
@@ -120,8 +120,8 @@ export const SLURS = [
             "Rock Biter",
             "Rock Eater",
             "Rockhead",
-            "Spuds (both are lumpy and come from the ground)",
-            "Squash (they look like squashed humans)",
+            "Spuds",
+            "Squash ",
             "Stone Domes",
             "Stone Humper",
             "Stone Sh*tter",
@@ -158,7 +158,7 @@ export const SLURS = [
             "Left Handed Casters",
             "Light Weights",
             "Mushroom Dancers",
-            "Oozebait (especially elf children)",
+            "Oozebait ",
             "Pixie",
             "Pointy",
             "Pointy Ears",
@@ -182,7 +182,7 @@ export const SLURS = [
         "Airhead",
             "Leaf Blower",
             "Spark Plug",
-            "Unfavorable Fart (from orcs; orcs aren't great at throwing shade)",
+            "Unfavorable Fart ",
             "Windbags"
       ],
     },
@@ -210,8 +210,8 @@ export const SLURS = [
     {
       displayText: "Giants",
       options: [
-        "Nesthair (birds tend to nest in high places)",
-        "Tumbletower (tall like a tower, but more easy to knock down)"
+        "Nesthair ",
+        "Tumbletower "
       ],
     },
     {
@@ -343,8 +343,8 @@ export const SLURS = [
         "Pink Thing",
         "Pink-Skin",
         "Pinks",
-        "Quisling (a human who spends a lot of time around a dragonborn)",
-        "Rabbit Spawn (from elves because of how fast humans breed by comparison)",
+        "Quisling ",
+        "Rabbit Spawn ",
         "Round Ears",
         "Roundteeth",
         "Short-Life",
@@ -417,7 +417,7 @@ export const SLURS = [
         "Scumbreed",
         "Slimeskin",
         "Swampskin",
-        "The Green Beast (referring collectively)",
+        "The Green Beast ",
         "Tusk-Face",
         "Tuskers"
       ],
@@ -458,7 +458,7 @@ export const SLURS = [
         "Tainted Ones",
         "Tall Imps",
         "Unbirth",
-        "Unloveables (from demons)"
+        "Unloveables "
       ],
     },
     {
