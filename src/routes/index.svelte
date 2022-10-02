@@ -19,7 +19,7 @@
   canonical="link"
 />
 
-
+<!-- <Home /> !-->
 <!--About me/bio-->
 <Content backgroundClass={primaryBackground} />
 
