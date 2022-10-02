@@ -14,8 +14,8 @@
 </script>
 
 <SEO
-  title="site name"
-  description="site desc"
+  title="Dnd-Roll"
+  description="Roll the slur-dice"
   canonical="link"
 />
 
