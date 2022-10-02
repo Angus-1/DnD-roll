@@ -1,8 +1,12 @@
+node_modules/
+.svelte-kit/
+package/
+build/
 .DS_Store
-node_modules
-/build
-/.svelte-kit
-/package
-.env
-.env.*
-!.env.example
+import.sh
+*.tfstate
+*.tfstate.backup
+.terraform/
+# env files
+.envrc
+*.local
