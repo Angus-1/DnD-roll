@@ -283,30 +283,7 @@
 		 transform: translate(0px, 0px);
 	}
 }
-/* --------------------------------------------------loading animation --------------------------------------------------*/
 
-.waviy {
-  position: relative;
-  -webkit-box-reflect: below  linear-gradient(transparent, rgba(0,0,0,.2));
-  font-size: calc(1.5rem + 3vw);
-}
-.waviy span {
-  position: relative;
-  display: inline-block;
-  color: rgb(131, 196, 250);
-  text-transform: uppercase;
-  animation: waviy 1s infinite;
-  animation-delay: calc(.1s * var(--i));
-  
-}
-@keyframes waviy {
-  0%,40%,100% {
-    transform: translateY(0)
-  }
-  20% {
-    transform: translateY(-20px)
-  }
-}
 /**============================title css ============================================*/
 
 .title {
