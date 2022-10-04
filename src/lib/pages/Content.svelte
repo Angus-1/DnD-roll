@@ -93,6 +93,8 @@
 	position: relative;
 	
 	}
+
+ 
 	* {
 	margin: 0;
 	padding: 0;
@@ -172,6 +174,8 @@
     border-radius: 5px;
     font-weight: bold;
 	background-color: #7ac2ec;
+  font-family: "MedievalSharp";
+
   }
   button:disabled {
     pointer-events: none;
@@ -191,6 +195,7 @@
     margin-top: 1.5rem;
     font-size: 1.5rem;
     color: #85f0b5;
+    
     font-weight: 600;
 	
   }
