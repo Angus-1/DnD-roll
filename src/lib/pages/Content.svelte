@@ -82,7 +82,7 @@
 	</div>
 
   </section>
-  
+  <link href='https://fonts.googleapis.com/css?family=MedievalSharp' rel='stylesheet'>
   <style>
 	#bg {
 	  width: 100%;
@@ -213,7 +213,7 @@
 .text_shadows {
   text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
     9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
-  font-family: bungee, sans-serif;
+  font-family: "MedievalSharp";
   font-weight: 200;
   text-transform: uppercase;
   font-size: calc(1.5rem + 3vw);
@@ -290,7 +290,7 @@
 	 color: rgb(89, 147, 201);
 	 text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #5271ff, 0 0 82px #5271ff, 0 0 92px #5271ff, 0 0 102px #5271ff, 0 0 151px #5271ff;
    font-size: 12px;
-	 font-family: "Yellowtail", sans-serif;
+	 font-family: "MedievalSharp";
    font-size: calc(3.5rem + 3vw);
 }
  
