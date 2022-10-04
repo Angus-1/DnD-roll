@@ -52,7 +52,7 @@
 				  </select>
 			  
 				  <button on:click={handleRandomize} disabled={!selectedOption || loading}>
-					Roll!
+					Roll
 				  </button>
 				
 				  <div class="selected-option">
