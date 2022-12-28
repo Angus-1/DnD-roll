@@ -15,7 +15,7 @@
   };
   const icons: Record<string, Icon> = {
     github: {
-      link: "https://github.com/Angus-1",
+      link: "https://github.com/Anguzz",
       iconClass: "fa-2x fab fa-github",
       name: "GitHub",
     },
