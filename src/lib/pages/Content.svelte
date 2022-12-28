@@ -1,9 +1,5 @@
 <script lang="ts">
 	import Anchor from "$lib/components/Anchor.svelte";
-
- 
-  
-
   import {SLURS} from "$lib/pages/slurs.ts";
   let selectedOption: { options: string|any[]; };
   let selectedRandomOption: string;
@@ -74,12 +70,7 @@
 						  <div class="face"><span class="dots">6</span></div>
 						</div>
 					  </div>
-				  
 					{/if}
-
-
-		
-
 	   </div>
 	</div>
 
@@ -166,26 +157,24 @@
     cursor: pointer;
     margin-left: 1rem;
     padding: 0.5rem 1rem;
-    color: #1F2937;
-    border-color: #558492;
+    color: #ffffff;
+    border-color: #ffffff;
     border-radius: 5px;
     font-weight: bold;
-	background-color: #7ac2ec;
+	background-color: #665008;
   font-family: "MedievalSharp";
 
   }
-  button:disabled {
-    pointer-events: none;
-	background-color: #2e70d3;
-  }
+  
   button:active {
     transform: scale(0.98);
-	color:#08415c;
+	color:#ffffff;
+  
 	background-color: #7ac8ec;
   }
   
   button:hover {
-    background-color: #54a0df;
+    background-color: #665008;
     border-color: #074183;
   }
   .selected-option {
@@ -200,11 +189,11 @@
  
 /* ---------------------------- chosen place animation css-----------------------------  */
  :root {
-	 --color-primary: #a2dcf6;
-	 --color-secondary: #90f1f4;
-	 --color-tertiary: #3d73b1;
-	 --color-quaternary: #6aa4f0;
-	 --color-quinary: #0c2363;
+	 --color-primary: #f5f4f3;
+	 --color-secondary: #91630e;
+	 --color-tertiary: #997718;
+	 --color-quaternary: #574a10;
+	 --color-quinary: #a77d22;
 }
 
  .content {
@@ -289,7 +278,7 @@
 /**============================title css ============================================*/
 
 .title {
-	 color: rgb(5, 5, 5);
+	 color: rgb(97, 68, 15);
 	 text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #ffffff, 0 0 82px #ffffff, 0 0 92px #ffffff, 0 0 102px #5271ff, 0 0 151px #5271ff;
    font-size: 12px;
 	 font-family: "MedievalSharp";
