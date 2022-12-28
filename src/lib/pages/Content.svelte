@@ -35,6 +35,7 @@
 			<h1 class="title">
 			Choose a race
 			  </h1>
+        <br>
 			  
 
 					<select
@@ -62,6 +63,7 @@
 					</div>	
 					{/if}
 					{#if loading === true}
+          <br><br>
 					<div class="cube-wrap">
 						<div class="cube">
 						  <div class="face"><span class="dots">1</span></div>
@@ -88,10 +90,10 @@
 	  width: 100%;
 	height: 100vh;
 	color: #fff;
-	background-image: url("/src/bricks.jpg");
+	background-image: url("background.jpg");
 	background-size: 120% 120%;
 	position: relative;
-	
+
 	}
 
  
@@ -120,12 +122,7 @@
 	/* --------------------------  title css--------------------------*/
 	@import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
   
-  body {
-	 display: flex;
-	 justify-content: center;
-	 align-items: center;
-	 font-family: 'Codystar';
-  }
+ 
   
   
   @-webkit-keyframes glow {
@@ -292,11 +289,13 @@
 /**============================title css ============================================*/
 
 .title {
-	 color: rgb(89, 147, 201);
-	 text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #5271ff, 0 0 82px #5271ff, 0 0 92px #5271ff, 0 0 102px #5271ff, 0 0 151px #5271ff;
+	 color: rgb(5, 5, 5);
+	 text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #ffffff, 0 0 82px #ffffff, 0 0 92px #ffffff, 0 0 102px #5271ff, 0 0 151px #5271ff;
    font-size: 12px;
 	 font-family: "MedievalSharp";
    font-size: calc(3.5rem + 3vw);
+   padding:10px;
+   border-radius: 10px;
 }
  
  h1, h2 {
@@ -319,21 +318,16 @@
   --dark-300: #555;
   --dark-200: #333;
   --dark-100: #111;
-  --cube-red: #0046c8;
-  --cube-red-2: #0046c8;
-  --cube-red-3: #0046c8;
-  --cube-red-4: #0046c8;
-  --cube-red-5: #0046c8;
-  --cube-red-6: #0046c8;
-  --dot-color: #fffdfd;
+  --cube-face: #ffffff;
+  --cube-face-2: #ffffff;
+  --cube-face-3: #ffffff;
+  --cube-face-4: #ffffff;
+  --cube-face-5: #ffffff;
+  --cube-face-6: #ffffff;
+  --dot-color: #000000;
   --darken: rgba(0, 0, 0, 0.4);
 }
-body {
-  background: var(--dark-200);
-  background-image: radial-gradient(var(--dark-300), var(--dark-100));
-  position: relative;
-  min-height: 100vh;
-}
+
 .cube-wrap {
   perspective: 1000;
   position: absolute;
@@ -356,9 +350,9 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: var(--cube-red);
+  background-color: var(--cube-face);
   background-image: radial-gradient(transparent, var(--darken));
-  border: 1px solid var(--cube-red-4);
+  border: 1px solid var(--cube-face-4);
   -webkit-backface-visibility: visible;
           backface-visibility: visible;
 }
@@ -374,7 +368,7 @@ body {
   bottom: 20px;
 }
 .face {
-  background-color: #0046c8;
+  background-color: #ffffff;
   opacity: 1;
 }
 .face:nth-child(1) {
@@ -384,21 +378,21 @@ body {
   box-shadow: 120px 0 0 0 var(--dot-color), 0 -120px 0 0 var(--dot-color), 120px -120px 0 0 var(--dot-color), 1px 1px 3px 1px var(--darken), 121px 1px 3px 1px var(--darken), 1px -121px 3px 1px var(--darken), 121px -121px 3px 1px var(--darken);
 }
 .face:nth-child(2) {
-  background-color: var(--cube-red-2);
+  background-color: var(--cube-face-2);
   transform: rotateZ(0deg) rotateY(0deg) translateZ(-100px);
 }
 .face:nth-child(2) .dots {
   box-shadow: 120px -120px 0 0 var(--dot-color), 60px -60px 0 0 var(--dot-color), 1px 1px 3px 1px var(--darken), 121px -121px 3px 1px var(--darken), 61px -61px 3px 1px var(--darken);
 }
 .face:nth-child(3) {
-  background-color: var(--cube-red-3);
+  background-color: var(--cube-face-3);
   transform: rotateZ(0deg) rotateY(90deg) translateZ(-100px);
 }
 .face:nth-child(3) .dots {
   box-shadow: 120px -120px 0 0 var(--dot-color), 1px 1px 3px 1px var(--darken), 121px -121px 3px 1px var(--darken);
 }
 .face:nth-child(4) {
-  background-color: var(--cube-red-4);
+  background-color: var(--cube-face-4);
   transform: rotateZ(90deg) rotateY(90deg) translateZ(-100px);
 }
 .face:nth-child(4) .dots {
@@ -407,14 +401,14 @@ body {
   box-shadow: 1px 1px 3px 1px var(--darken);
 }
 .face:nth-child(5) {
-  background-color: var(--cube-red-5);
+  background-color: var(--cube-face-5);
   transform: rotateZ(0deg) rotateY(-90deg) translateZ(-100px);
 }
 .face:nth-child(5) .dots {
   box-shadow: 120px 0 0 0 var(--dot-color), 0 -120px 0 0 var(--dot-color), 120px -120px 0 0 var(--dot-color), 60px -60px 0 0 var(--dot-color), 121px 1px 3px 1px var(--darken), 1px -121px 3px 1px var(--darken), 121px -121px 3px 1px var(--darken), 61px -61px 3px 1px var(--darken), 1px 1px 3px 1px var(--darken);
 }
 .face:nth-child(6) {
-  background-color: var(--cube-red-6);
+  background-color: var(--cube-face-6);
   transform: rotateZ(90deg) rotateY(90deg) translateZ(100px);
 }
 .face:nth-child(6) .dots {
