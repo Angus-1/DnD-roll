@@ -81,7 +81,7 @@
 	  width: 100%;
 	height: 100vh;
 	color: #fff;
-	background-image: url("background.jpg");
+	background-image: url("/background.jpg");
 	background-size: 120% 120%;
 	position: relative;
 
