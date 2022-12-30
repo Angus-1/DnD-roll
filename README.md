@@ -3,6 +3,5 @@ A random dice roll for racial slurs in Dungeons and Dragons. Inspired by https:/
 
 List first compiled at https://www.reddit.com/r/DnD/comments/6na3hi/i_compiled_a_list_of_racial_slurs_for_you_to_use/
 
-
-![image](https://user-images.githubusercontent.com/26943671/193482582-e4c9f1be-ad6d-4f16-adc7-00554beb5693.png)
-![image](https://user-images.githubusercontent.com/26943671/193482590-e09aae5c-5d6d-48a6-902b-b27ace8fd3df.png)
+![image](https://user-images.githubusercontent.com/26943671/210104079-80660537-f586-4bf4-96cb-54f0bdc02b83.png)
+![image](https://user-images.githubusercontent.com/26943671/210104110-e2001a50-3f92-42fb-8fb9-920d12384806.png)
